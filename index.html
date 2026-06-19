@@ -75,22 +75,22 @@
   <div class="header-zone">
     <div class="badge">Stanton Cross Campaign Tool</div>
     <h1>Write to the People Who Matter</h1>
-    <p class="subtitle">Generate a personal letter in your own words, not legal jargon. Takes under two minutes.</p>
+    <p class="subtitle">Generate a personal complaint letter. Takes under two minutes.</p>
   </div>
 
   <div class="card">
     <div class="step active" id="step0">
-      <div class="step-header"><div class="step-number">1</div><h2 class="step-text">Who do you want to contact?</h2></div>
+      <div class="step-header"><div class="step-number">1</div><h2 class="step-text">Who do you want to write too?</h2></div>
       <div id="targetOptions" class="grid-layout"></div>
     </div>
 
     <div class="step" id="step1">
       <div class="step-header"><div class="step-number">2</div><h2 class="step-text">Your details</h2></div>
       <p class="subtitle" style="margin-bottom:8px;">These go at the bottom of the letter so they know you're a real Stanton Cross resident.</p>
-      <label>Your full name</label>
-      <input type="text" id="signerName" placeholder="e.g. Sarah Thompson">
+      <label>Your name</label>
+      <input type="text" id="signerName" placeholder="e.g. Stan Cross">
       <label>Your address on the estate</label>
-      <textarea id="signerAddress" rows="2" placeholder="e.g. 14 Meadow Close, Stanton Cross, Wellingborough, NN8..."></textarea>
+      <textarea id="signerAddress" rows="2" placeholder="e.g. xxx Driver Way, Stanton Cross, Wellingborough, NN8..."></textarea>
     </div>
 
     <div class="step" id="step2">
@@ -201,7 +201,7 @@ const TARGETS = {
   homesengland: {
     label: "Homes England",
     sub: "Amy Rees CB, Chief Executive",
-    lever: "Challenges Good Standing status and the £700m SAHP grant decision",
+    lever: "Challenges Vistry's Good Standing status and the £700m SAHP grant decision",
     name: "Amy Rees CB",
     role: "Chief Executive",
     org: "Homes England",
@@ -274,10 +274,10 @@ const GRIEVANCES = [
 
 // ─── FACTS ────────────────────────────────────────────────────────────────────
 const FACTS = {
-  s106_breach: "The Section 106 legal planning agreement required the developer to have the retail units completed before 1,200 homes were occupied on the estate. There are now over 1,640 homes at Stanton Cross. The delivery trigger has been exceeded by at least 145 homes, and not one retail unit has been completed.",
+  s106_breach: "The Section 106 legal planning agreement required the developer to have the retail units completed before 1,200 homes were occupied on the estate. There are now over 1,640 homes at Stanton Cross. The delivery trigger has been exceeded by at least 440 homes, and not one retail unit has been completed.",
   refusal_2025: "When Vistry applied to the council to push the delivery trigger back further, to 2,000 homes, North Northamptonshire Council's planning committee unanimously rejected that application on 10 December 2025. That decision closes off Vistry's argument that more time is needed. The planning authority has made its position clear.",
   vistry_finances: "Vistry Group has faced serious financial difficulties. The company's share price collapsed by close to two thirds following a major profit warning, and the company issued an instruction to pause construction on privately funded homes while it restructured. These are not the circumstances of a company that simply needs more time. They are the circumstances of a company under real financial pressure, and residents at Stanton Cross are bearing the consequences.",
-  homes_england_standing: "Homes England operates a Continuous Qualification process under which developers must maintain Good Standing by demonstrating ongoing financial and technical capacity. A developer in active legal breach of a Section 106 agreement on a publicly funded site, and which has recently experienced a near two-thirds share price collapse and a pause on privately funded construction, raises serious questions about whether that Good Standing status should still be maintained. Residents are asking Homes England to confirm whether a review has taken place, and if not, why not.",
+  homes_england_standing: "Homes England operates a Continuous Qualification process under which developers must maintain Good Standing by demonstrating ongoing financial and technical capacity. A developer in active breach of a Section 106 agreement, and which has recently experienced a near two-thirds share price collapse and a pause on privately funded construction, raises serious questions about whether that Good Standing status should still be maintained. Residents are asking Homes England to confirm whether a review has taken place, and if not, why not.",
   homes_england_funding: "Homes England has provided public grant funding to support this development as part of its national housing programme. A further £700 million is at stake through the Social and Affordable Homes Programme grant decision expected in Q3 2026. Residents believe it is not appropriate for a developer in active legal breach of planning obligations at a publicly funded site to receive further public funding without accountability.",
   enforcement_powers: "North Northamptonshire Council has the statutory powers to act. These include issuing Breach of Condition Notices, serving Enforcement Notices, and, where a developer continues to fail to comply, applying to the High Court for an injunction. The unanimous refusal of Vistry's extension application in December 2025 was an important step, but a refusal without enforcement leaves the breach in place. Residents are asking the council to use the powers it has.",
   govt_policy_2026: "The Government's March 2026 policy statement on Section 106 agreements reaffirmed that they are an essential mechanism for ensuring that new development contributes to the infrastructure and services communities need. Residents at Stanton Cross are asking whether that commitment applies equally when the developer in breach is also in receipt of substantial public funding from a government agency."
@@ -314,7 +314,7 @@ const FALLBACK_OPENINGS = {
     "My family moved to Stanton Cross because we were told it would be a proper neighbourhood with shops, facilities, and everything a new community needs. That has not happened, and I'm writing to tell you directly.",
     "I'm a resident at Stanton Cross, and I want to put something plainly to you: the company you lead is in breach of a legal planning agreement, and people here are living with the consequences.",
     "I've been living on the Stanton Cross estate for some time now, and I'm writing because the gap between what was promised and what has been delivered is no longer something I'm prepared to ignore.",
-    "This letter is from a resident of Stanton Cross who has waited long enough. Vistry made legal commitments about what this community would receive. Those commitments have not been honoured."
+    "This letter is from a resident of Stanton Cross I've waited long enough. Vistry made legal commitments about what this community would receive. Those commitments have not been honoured."
   ],
   homesengland: [
     "I am writing as a resident of Stanton Cross, a development that your organisation has helped fund. I want to raise a serious concern about what your funding is paying for.",
